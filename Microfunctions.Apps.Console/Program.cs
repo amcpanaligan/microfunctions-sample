@@ -1,6 +1,9 @@
 ﻿namespace Microfunctions.Apps.Console
 {
     using Microfunctions.Clients.Document;
+    using Microfunctions.Infrastructure.Interfaces;
+    using Microfunctions.Infrastructure.Messages.Documents;
+    using Microfunctions.Services.Document;
 
     class Program
     {
@@ -12,10 +15,12 @@
             System.Console.ReadKey();
             System.Console.WriteLine("Loading. Please wait...");
 
+            //// You can now interchange IDocumentService to Function Clients or the Real Service
 
-            var client = new DocumentClient("http://localhost:7071", string.Empty); //// All should be in config.
+            IDocumentService service = new DocumentClient("http://localhost:7071", string.Empty); //// All should be in config.
+            //// service = new DocumentService();
 
-            var response = client.CreateDocumentAsync(new Clients.Document.Models.CreateDocumentRequest { Name = "Test" }).Result;
+            var response = service.CreateDocumentAsync(new CreateDocumentRequest { Name = "Test" }).Result;
             System.Console.ReadKey();
         }
     }

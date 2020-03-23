@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28307.960
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Microfunctions.Functions.Document", "Microfunctions.Functions.Document\Microfunctions.Functions.Document.csproj", "{91699638-F698-4785-A76D-60E06DCB0668}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Microfunctions.Functions.Document", "Microfunctions.Functions.Document\Microfunctions.Functions.Document.csproj", "{91699638-F698-4785-A76D-60E06DCB0668}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Functions", "Functions", "{BF04F0CD-059E-47A7-810B-C0C2861034EB}"
 EndProject
@@ -11,13 +11,17 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Services", "Services", "{63
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Clients", "Clients", "{0B56EF45-1CBD-4C24-8092-F7E46F15CB87}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Microfunctions.Services.Document", "Microfunctions.Services.Document\Microfunctions.Services.Document.csproj", "{04CDE677-81F0-4E13-849A-E808F494947D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Microfunctions.Services.Document", "Microfunctions.Services.Document\Microfunctions.Services.Document.csproj", "{04CDE677-81F0-4E13-849A-E808F494947D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Microfunctions.Clients.Document", "Microfunctions.Clients.Document\Microfunctions.Clients.Document.csproj", "{300D282E-A4A3-4566-BE3E-E69C8304CE98}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Microfunctions.Clients.Document", "Microfunctions.Clients.Document\Microfunctions.Clients.Document.csproj", "{300D282E-A4A3-4566-BE3E-E69C8304CE98}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Apps", "Apps", "{FEF4F838-F0E4-4E2E-B418-0B6ED7853D9B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Microfunctions.Apps.Console", "Microfunctions.Apps.Console\Microfunctions.Apps.Console.csproj", "{A2CC2DC3-5C30-43F8-A6D8-1D1934DDA85F}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure", "Infrastructure", "{C8537FAA-291C-40F5-A7B6-2782F8433A22}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Microfunctions.Infrastructure", "Microfunctions.Infrastructure\Microfunctions.Infrastructure.csproj", "{2BF4348A-0811-4E7D-A4AD-0B0392C471CD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Microfunctions.Api", "Microfunctions.Api\Microfunctions.Api.csproj", "{58FF02B6-309E-45DF-9E58-AF27E869301D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -37,10 +41,14 @@ Global
 		{300D282E-A4A3-4566-BE3E-E69C8304CE98}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{300D282E-A4A3-4566-BE3E-E69C8304CE98}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{300D282E-A4A3-4566-BE3E-E69C8304CE98}.Release|Any CPU.Build.0 = Release|Any CPU
-		{A2CC2DC3-5C30-43F8-A6D8-1D1934DDA85F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{A2CC2DC3-5C30-43F8-A6D8-1D1934DDA85F}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{A2CC2DC3-5C30-43F8-A6D8-1D1934DDA85F}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{A2CC2DC3-5C30-43F8-A6D8-1D1934DDA85F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2BF4348A-0811-4E7D-A4AD-0B0392C471CD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2BF4348A-0811-4E7D-A4AD-0B0392C471CD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2BF4348A-0811-4E7D-A4AD-0B0392C471CD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2BF4348A-0811-4E7D-A4AD-0B0392C471CD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{58FF02B6-309E-45DF-9E58-AF27E869301D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{58FF02B6-309E-45DF-9E58-AF27E869301D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{58FF02B6-309E-45DF-9E58-AF27E869301D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{58FF02B6-309E-45DF-9E58-AF27E869301D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -49,7 +57,8 @@ Global
 		{91699638-F698-4785-A76D-60E06DCB0668} = {BF04F0CD-059E-47A7-810B-C0C2861034EB}
 		{04CDE677-81F0-4E13-849A-E808F494947D} = {63DED2B9-9E3D-40A9-9ED4-6C9FC40DD029}
 		{300D282E-A4A3-4566-BE3E-E69C8304CE98} = {0B56EF45-1CBD-4C24-8092-F7E46F15CB87}
-		{A2CC2DC3-5C30-43F8-A6D8-1D1934DDA85F} = {FEF4F838-F0E4-4E2E-B418-0B6ED7853D9B}
+		{2BF4348A-0811-4E7D-A4AD-0B0392C471CD} = {C8537FAA-291C-40F5-A7B6-2782F8433A22}
+		{58FF02B6-309E-45DF-9E58-AF27E869301D} = {FEF4F838-F0E4-4E2E-B418-0B6ED7853D9B}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {AF48BE1E-CC5A-47F1-8857-AAD22CF0D15A}

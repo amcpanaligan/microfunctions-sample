@@ -1,4 +1,4 @@
-﻿namespace Microfunctions.Services.Document.Models
+﻿namespace Microfunctions.Infrastructure.Messages.Documents
 {
     using System.Runtime.Serialization;
 

@@ -3,9 +3,10 @@
     using System;
     using System.Net.Http;
     using System.Threading.Tasks;
-    using Microfunctions.Clients.Document.Models;
+    using Microfunctions.Infrastructure.Interfaces;
+    using Microfunctions.Infrastructure.Messages.Documents;
 
-    public sealed class DocumentClient
+    public sealed class DocumentClient : IDocumentService
     {
         private static HttpClient client = new HttpClient();
 

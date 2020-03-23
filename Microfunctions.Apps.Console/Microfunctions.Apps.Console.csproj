@@ -7,6 +7,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Microfunctions.Clients.Document\Microfunctions.Clients.Document.csproj" />
+    <ProjectReference Include="..\Microfunctions.Services.Document\Microfunctions.Services.Document.csproj" />
   </ItemGroup>
 
 </Project>

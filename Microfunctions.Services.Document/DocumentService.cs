@@ -1,9 +1,10 @@
 ﻿namespace Microfunctions.Services.Document
 {
     using System.Threading.Tasks;
-    using Microfunctions.Services.Document.Models;
+    using Microfunctions.Infrastructure.Interfaces;
+    using Microfunctions.Infrastructure.Messages.Documents;
 
-    public class DocumentService
+    public class DocumentService : IDocumentService
     {
         public async Task<CreateDocumentResponse> CreateDocumentAsync(CreateDocumentRequest request)
         {
